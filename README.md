@@ -6,4 +6,4 @@ Javascript school assignment.
     To create a function that iterates numbers either in even or odd
     until the last number from user input
     
-![](output.png)
+![JS odd even function](output.png)
