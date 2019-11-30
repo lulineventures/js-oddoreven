@@ -1,5 +1,5 @@
 # js-oddoreven
-##Iterate odd and even functions base on user input
+### Iterate odd and even functions base on user input
 
 Javascript school assignment.
 
