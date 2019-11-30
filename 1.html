@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Odd Even</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+
+
+<p>Enter: <input type ="number" id="num"></p>
+<button onclick="myEven()" type="button" class="btn btn-secondary">Even</button>
+<button onclick="myOdd()" type="button" class="btn btn-secondary">Odd</button>
+<button type="button" class="btn btn-secondary" onclick="document.getElementById('num').value = ''">Cancel</button>
+		<button type="button" class="btn btn-secondary" onClick="history.go(0);">Clear</button>
+<br>
+<ul>
+<li id="result_even">
+<li id="result_odd">
+</ul>
+
+<script>
+	function myEven() {
+  	var x = document.getElementById('num').value;
+  	var p = "";
+  	var i;
+  	for (i = 0; i <= x; i+=2) {
+    	p += + i + "<br>";
+  	}
+  	document.getElementById("result_even").innerHTML = p;
+	}
+	
+	function myOdd() {
+  	var x = document.getElementById('num').value;
+  	var p = "";
+  	var i;
+  	for (i = 1; i <= x; i+=2) {
+    	p += + i + "<br>";
+  	}
+  	document.getElementById("result_odd").innerHTML = p;
+	}
+</script>
+		<style type="text/css" media="screen">
+		body {
+			margin: 5rem;
+		}
+		input {
+			height: 2rem;
+		}
+
+		#num {
+			width: 13.8rem;
+		}
+			
+		ul, li {
+			display: flex;
+			flex-direction: row;
+			text-decoration: none;
+			margin: 2rem;
+		</style>
+
+</body>
+</html>
